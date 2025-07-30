@@ -273,9 +273,134 @@ document.addEventListener('DOMContentLoaded', () => {
             delay: 0.2  
         });
     }
-    
-    
 
+    if (animatedProjectTitle) {    
+        const splitProjectTitle = new SplitText(animatedProjectTitle, { type: "lines" });
+        gsap.from(splitProjectTitle.lines, {
+            scrollTrigger: {
+                trigger: animatedProjectTitle,
+                start: "top 80%",
+            },
+            opacity: 0,
+            y: 10,
+            duration: 0.5,
+            stagger: 0.25,
+            ease: "power4.out",
+            delay: 0.2  
+        });
+    }
+
+    if (animatedProjectDescription) {
+        const splitProjectDescription = new SplitText(animatedProjectDescription, { type: "lines" });
+        gsap.from(splitProjectDescription.lines, {
+            scrollTrigger: {
+                trigger: animatedProjectDescription,
+                start: "top 80%",
+            },
+            opacity: 0,
+            y: 10,
+            duration: 0.5,
+            stagger: 0.25,
+            ease: "power4.out",
+            delay: 0.2  
+        });
+    }
+
+    if (animatedAboutTitle) {
+        const splitAboutTitle = new SplitText(animatedAboutTitle, { type: "lines" });
+        gsap.from(splitAboutTitle.lines, {
+            scrollTrigger: {
+                trigger: animatedAboutTitle,
+                start: "top 80%",
+            },
+            opacity: 0,
+            y: 10,
+            duration: 0.5,
+            stagger: 0.25,
+            ease: "power4.out",
+            delay: 0.2  
+        });
+    }
+
+    if (animatedAboutDescription) {
+        const splitAboutDescription = new SplitText(animatedAboutDescription, { type: "lines" });
+        gsap.from(splitAboutDescription.lines, {
+            scrollTrigger: {
+                trigger: animatedAboutDescription,
+                start: "top 80%",
+            },
+            opacity: 0,
+            y: 10,
+            duration: 0.5,
+            stagger: 0.25,
+            ease: "power4.out",
+            delay: 0.2  
+        });
+    }
+
+    if (animatedContactTitle) {
+        const splitContactTitle = new SplitText(animatedContactTitle, { type: "lines" });
+        gsap.from(splitContactTitle.lines, {
+            scrollTrigger: {
+                trigger: animatedContactTitle,
+                start: "top 80%",
+            },
+            opacity: 0,
+            y: 10,
+            duration: 0.5,
+            stagger: 0.25,
+            ease: "power4.out",
+            delay: 0.2  
+        });
+    }
+
+    if (animatedContactDescription) {
+        const splitContactDescription = new SplitText(animatedContactDescription, { type: "lines" });
+        gsap.from(splitContactDescription.lines, {
+            scrollTrigger: {
+                trigger: animatedContactDescription,
+                start: "top 80%",
+            },
+            opacity: 0,
+            y: 10,
+            duration: 0.5,
+            stagger: 0.25,
+            ease: "power4.out",
+            delay: 0.2  
+        });
+    }
+
+    if (animatedFooterTitle) {
+        const splitFooterTitle = new SplitText(animatedFooterTitle, { type: "lines" });
+        gsap.from(splitFooterTitle.lines, {
+            scrollTrigger: {
+                trigger: animatedFooterTitle,
+                start: "top 80%",
+            },
+            opacity: 0,
+            y: 10,
+            duration: 0.5,
+            stagger: 0.25,
+            ease: "power4.out",
+            delay: 0.2  
+        });
+    }
+
+    if (animatedFooterDescription) {
+        const splitFooterDescription = new SplitText(animatedFooterDescription, { type: "lines" });
+        gsap.from(splitFooterDescription.lines, {
+            scrollTrigger: {
+                trigger: animatedFooterDescription,
+                start: "top 80%",
+            },
+            opacity: 0,
+            y: 10,
+            duration: 0.5,
+            stagger: 0.25,
+            ease: "power4.out",
+            delay: 0.2  
+        });
+    }
     // Animate heroTitle with SplitText (words -> chars)
     if (heroTitle) {
         const splitTitle = new SplitText(heroTitle, { type: "lines" });
